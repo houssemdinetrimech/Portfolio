@@ -7,6 +7,20 @@
     <title>Contact Page </title>
 </head>
 <body>
+
+
+  <nav  style="float:right ; font-size:30px ; padding-right: 80px ;"  >
+    
+    <a style=" background-color: #667fb0 ;color:rgb(255, 255, 255);"  href="./index.html"  >Home</a>
+    <a  style="background-color: #667fb0 ;color:rgb(255, 255, 255);" href="./work.html"  >Work</a>
+    
+    <a  style="background-color: #667fb0 ;color:rgb(255, 255, 255); " href="./resume.html"  >Resume</a>
+    <a  style="background-color: #667fb0 ;color:rgb(255, 255, 255);    " href="./about.html"  >About</a>
+    
+    <a  style="background-color: #667fb0 ;color:rgb(255, 255, 255); "   href="./contact.html" >Contact</a>
+
+</nav>
+
     <header>
         <dl>                                                                       
             <dt >
@@ -23,16 +37,66 @@
           background-attachment: fixed;
           background-size: cover;
         }
-     </style>   
-     <Contact_section style="font-size: 25px" >
-     <form >
-        <label style="color: #ffffff" for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label style="color: #ffffff" for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-        <br>
-        <input type="submit" value="Submit">
+     </style>  
+    
+    <div class="container" style="color: #ffffff">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label style="color: #ffffff" for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label style="color: #ffffff" for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname">
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+  
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  
+    <div class="container signin" style="color: #ffffff">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+
+      
+    </div>
+  </form>
+  
+    
+
+        <label  style="color: #ffffff" br for="localisation">Localisation</label>
+        <BR>
+    <select id="localisation" name="localisation">
+      <option value="Monastir">Monastir</option>
+      <option value="sousse">sousse</option>
+      <option value="benzart">benzart</option>
+      <option value="tunis">tunis</option>
+      <option value="nabeul">nabeul</option>
+      <option value="sfax">sfax</option>
+      
+
+      <input type="submit" value="Submit">
+      
+      
+
+    </select>
+    <br>
+    <br>
+    
+
+    <label for="subject">Subject</label>
+    <textarea  id="subject" name="subject" placeholder="Write something.." style=" height:200px " ></textarea>
+
+    <input type="submit" value="Submit">
       </form>
     </contact_section>
+   
 </body>
 </html>
